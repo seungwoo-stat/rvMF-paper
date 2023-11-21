@@ -71,9 +71,9 @@ for(p in c(2,3,4,5,10,100,1000,10000)){
     temp <- aggregate(res$time,list(res$expr),mean)
     
     timedata <- rbind(timedata,cbind(p,kappa,
-                      (temp[temp$Group.1 == "rvMF101","x"] - temp[temp$Group.1 == "rvMF1","x"])/100,
-                      (temp[temp$Group.1 == "Rfast101","x"] - temp[temp$Group.1 == "Rfast1","x"])/100),
-                      (temp[temp$Group.1 == "rotasym101","x"] - temp[temp$Group.1 == "rotasym1","x"])/100)
+                                     (temp[temp$Group.1 == "rvMF101","x"] - temp[temp$Group.1 == "rvMF1","x"])/100,
+                                     (temp[temp$Group.1 == "Rfast101","x"] - temp[temp$Group.1 == "Rfast1","x"])/100,
+                                     (temp[temp$Group.1 == "rotasym101","x"] - temp[temp$Group.1 == "rotasym1","x"])/100))
   }
 }
 colnames(timedata) <- c("p","kappa","rvMF","Rfast","rotasym")
