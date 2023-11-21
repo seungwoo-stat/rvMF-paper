@@ -83,7 +83,7 @@ timedata #unit: ns (1e-9 seconds)
 p <- 10000 # 2, 3, 10, 100, 1000 ...
 set.seed(0)
 timedata <- data.frame()
-for(n in 10^(3:8)){
+for(n in 10^(2:7)){
   for(kappa in c(0.1,0.5,1,5,10,100,1000,10000)){
     res <- microbenchmark("proposed" = {
       rvMFangle(n,p,kappa)
@@ -109,7 +109,8 @@ for(n in 10^(3:8)){
     message(paste0("p=",p," / n = ",n," / kappa=",kappa))
   }
 }
-colnames(timedata) <- c("group","n","kappa","summary(mean,med)")
+timedata <- cbind(timedata[,1:3],timedata[,4])
+colnames(timedata) <- c("group","n","kappa","mean","median")
 timedata$group <- c("rvMF","Rfast","rotasym")[timedata$group]
 timedata #unit: 1e-9 seconds
 # saveRDS(timedata,"timedata_p10000.rds")
