@@ -4,11 +4,11 @@ This repository contains code to reproduce figures and experiments from the pape
 
 `Figures-upload.R` reproduces Figures 1 and 2.
 
-`Experiments-upload.R` reproduces Tables 1, 2, 3 and 4.
+`Experiments-upload.R` reproduces Tables 1, 2 and 3. It also reproduces experiments in the paper.
 
 Experiments were conducted on the machine with the following session information:
 
-``` R
+``` r
 sessionInfo()
 #> R version 3.6.3 (2020-02-29)
 #> Platform: x86_64-pc-linux-gnu (64-bit)
