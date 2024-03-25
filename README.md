@@ -1,6 +1,6 @@
 # rvMF-paper
 
-This repository contains code to reproduce figures and experiments from the paper "Novel Sampling Method for the von Mises--Fisher Distribution" (Kang and Oh, 2023)
+This repository contains code to reproduce figures and experiments from the paper "Novel Sampling Method for the von Mises--Fisher Distribution" (Kang and Oh, 2024)
 
 `Figures-upload.R` reproduces Figures 1 and 2.
 
@@ -44,4 +44,4 @@ sessionInfo()
 
 ### Reference
 
--   Seungwoo Kang and Hee-Seok Oh. (2023) Novel Sampling Method for the von Mises--Fisher Distribution. *Statistics and Computing*. To appear.
+-   Seungwoo Kang and Hee-Seok Oh. (2024) Novel Sampling Method for the von Mises--Fisher Distribution. *Statistics and Computing*. To appear.
