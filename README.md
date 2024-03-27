@@ -44,4 +44,4 @@ sessionInfo()
 
 ### Reference
 
--   Seungwoo Kang and Hee-Seok Oh. (2024) Novel Sampling Method for the von Mises--Fisher Distribution. *Statistics and Computing* **34**(3), 106.
+-   Seungwoo Kang and Hee-Seok Oh. (2024) [Novel Sampling Method for the von Mises--Fisher Distribution](https://doi.org/10.1007/s11222-024-10419-3). *Statistics and Computing* **34**(3), 106.
